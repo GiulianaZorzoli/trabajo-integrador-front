@@ -1,0 +1,50 @@
+:root{
+    --color1:#464547;
+    --color2:#aba7a7;
+    --color3:#1e9926;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html, body{
+    height: 100%;
+    color: white;
+}
+nav{
+    background-color: var(--color1);
+    padding: .5rem;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav div:last-of-type{
+    justify-content: right;
+    padding-right: 4rem;
+}
+nav div img{
+    width: 7rem;
+}
+nav div p{
+    margin: 0 .5rem;
+    color:var(--color2) ;
+    cursor: pointer;
+}
+nav div p:first-of-type{
+    color: white;
+}
+nav div p:last-of-type{
+    color: var(--color3);
+}
+main section{
+    display: flex;
+    flex-direction: column;
+
+}
+main section:first-of-type{
+    height: 400px;
+}
