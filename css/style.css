@@ -2,17 +2,18 @@
     --color1:#464547;
     --color2:#aba7a7;
     --color3:#1e9926;
+    --color4:#7cbd36;
 }
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 html, body{
     height: 100%;
     color: white;
 }
+/* nav */
 nav{
     background-color: var(--color1);
     padding: .5rem;
@@ -29,22 +30,32 @@ nav div:last-of-type{
 nav div img{
     width: 7rem;
 }
-nav div p{
+nav div p {
     margin: 0 .5rem;
-    color:var(--color2) ;
-    cursor: pointer;
 }
-nav div p:first-of-type{
+nav div p a{
+    text-decoration: none;
+    color:var(--color2) ;
+}
+nav div p a:hover{
     color: white;
 }
-nav div p:last-of-type{
+.seleccionado{
+    color: white;
+}
+.tickets{
     color: var(--color3);
 }
+.tickets:hover{
+    color: greenyellow;
+}
+/* main */
 main section{
     display: flex;
     flex-direction: column;
 
 }
+/* conferencia */
 .card-img{
     height: 35rem;
 }
@@ -60,4 +71,99 @@ main section{
     flex-direction: column;
     text-align: right;
     padding: 4rem;
+}
+
+/* oradores */
+.title{
+    color: black;
+    text-align: center;
+    padding: .5rem;
+}
+.title h6{
+    font-size: smaller;
+    color: grey;
+}
+#oradores .cardOradores{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+}
+.cardOradores .card{
+    margin: 0 1rem;
+}
+.card-body button{
+    padding: .05rem .5rem ;
+    font-size:.75rem ;
+    font-weight: bold;
+}
+.card-title{
+    padding-top: .5rem;
+}
+
+/* lugar */
+#lugar{
+    width: 100%;
+    display: flex;
+}
+#lugar div:first-of-type{
+    width: 40%;
+    height: 30rem;
+    background-image: url(../img/honolulu.jpg);
+    background-size: cover;
+}
+#lugar div:last-of-type{
+    background-color: var(--color1);
+    height: 30rem;
+    width: 40%;
+    flex-grow: 1;
+    padding: 1rem;
+    border-left: solid 2px white;
+}
+
+/* form */
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title p span{
+    border-bottom: 3px dotted black ;
+}
+.formulario{
+    width: 50%;
+}
+.inputDiv{
+    padding: 0;
+}
+.inputDiv:first-of-type{
+    padding-right: 1rem;
+}
+.textArea{
+    margin-top: 1rem;
+    padding-bottom:2rem ;
+}
+.formulario button{
+    background-color:var(--color4);
+    border: none;
+    margin-top: 1rem;
+}
+.formulario button:hover{
+    background-color: var(--color3);
+}
+
+/* footer */
+footer{
+    margin-top: 2rem;
+    background: rgb(19,34,43);
+    background: linear-gradient(83deg, rgba(19,34,43,1) 0%, rgba(24,54,77,1) 50%, rgba(32,97,107,1) 100%);
+}
+footer div{
+    height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer div h6{
+    width: 6rem;
+    text-align: center;
 }

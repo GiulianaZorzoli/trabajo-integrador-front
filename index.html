@@ -15,16 +15,16 @@
                 <h4>Conf Bs As</h4>
             </div>
             <div class="col-9">
-                <p class="fs-sm-4">La conferencia</p>
-                <p class="fs-sm-4">Los oradores</p>
-                <p class="fs-sm-4">El lugar y la fecha</p>
-                <p class="fs-sm-4">Conviértete en orador</p>
-                <p class="fs-sm-4"> Comprar tickets</p>
+                <p class="fs-sm-4"><a href="#conf" class="seleccionado">La conferencia</a></p>
+                <p class="fs-sm-4"><a href="#oradores">Los oradores</a></p>
+                <p class="fs-sm-4"><a href="#lugar">El lugar y la fecha</a></p>
+                <p class="fs-sm-4"><a href="#form">Conviértete en orador</a></p>
+                <p class="fs-sm-4"> <a href="" class="tickets">Comprar tickets</a></p>
             </div>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="conf">
             <div class="card text-bg-dark border-0 rounded-0">
                 <img src="img/ba1.jpg" class="card-img" alt="...">
                 <div class="card-img-overlay">
@@ -39,24 +39,78 @@
                 </div>
             </div>
         </section>
-        <section>
-            <!-- texto
-            titulo
-            cards con oradores -->
+        <section id="oradores">
+            <div class="title">
+                <h6>CONOCE A LOS</h5>
+                <h3>ORADORES</h3>
+            </div>
+            <div class="cardOradores">
+                <div class="card " style="width: 18rem;">
+                    <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs">
+                    <div class="card-body">
+                      <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
+                      <button type="button" class="btn btn-info btn-sm">React</button>
+                      <h5 class="card-title">Steve Jobs</h5>
+                      <p class="card-text">Lorem ipsum dolor amet, consectetur adipisiciong elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis corporis facilis veniam magni ratione!</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/bill.jpg" class="card-img-top" alt="Bill Gates">
+                    <div class="card-body">
+                      <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
+                      <button type="button" class="btn btn-info btn-sm">React</button>
+                      <h5 class="card-title">Bill Gates</h5>
+                      <p class="card-text">Lorem ipsum dolor amet, consectetur adipisiciong elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis corporis facilis veniam magni ratione!</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
+                    <div class="card-body">
+                      <button type="button" class="btn btn-secondary btn-sm">Negocios</button>
+                      <button type="button" class="btn btn-danger btn-sm">Startups</button>
+                      <h5 class="card-title">Ada Lovelace</h5>
+                      <p class="card-text">Lorem ipsum dolor amet, consectetur adipisiciong elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis corporis facilis veniam magni ratione!</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <!-- dos div uno imagen y otro texto -->
-        </section>
-        <section>
-            <!-- subtitulo 
-            titulo
-            texto
-            form
-            boton -->
+        <div id="lugar">
+            <div></div>
+            <div>
+                <h3>Bs As - Octubre</h3>
+                <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos. Honolulu es la más suereña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+                <button type="button" class="btn btn-outline-light">Conocé más</button>
+            </div>
+        </div>
+        <section id="form">
+            <div class="title">
+                <h6>CONVIÉRTETE EN UN</h5>
+                <h3>ORADORES</h3>
+                <p>Anótate como orador para dar una <span>charla ignite</span>. Cuéntanos de qué quieres hablar!</p>
+            </div>
+            <div class="row formulario">
+                <div class="col inputDiv">
+                  <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col inputDiv">
+                  <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
+                <textarea class="form-control textArea" aria-label="With textarea" placeholder="Sobre qué quieres hablar?"></textarea>
+                <div class="form-text" id="basic-addon4">Recuerda incluir un título para tu charla</div>
+                <button class="btn btn-primary" type="button">Enviar</button>
+            </div>
         </section>
     </main>
     <footer>
-        <!-- info -->
+        <div>
+            <h6>Preguntas Frecuentes</h6>
+            <h6>Contactanos</h6>
+            <h6>Prensa</h6>
+            <h6>Conferencias</h6>
+            <h6>Terminos y condiciones</h6>
+            <h6>Privacidad</h6>
+            <h6>Estudiantes</h6>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
