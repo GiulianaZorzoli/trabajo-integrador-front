@@ -45,6 +45,19 @@ main section{
     flex-direction: column;
 
 }
-main section:first-of-type{
-    height: 400px;
+.card-img{
+    height: 35rem;
+}
+.card-img-overlay{
+    background-color: #0000007c;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.card-img-overlay div{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 4rem;
 }
