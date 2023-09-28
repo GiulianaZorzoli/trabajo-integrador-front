@@ -10,26 +10,26 @@
 <body>
     <header>
         <nav class="row">
-            <div class="col-3">
+            <div class="col-md-3 col-12">
                 <img src="img/codoacodo.png" alt="">
                 <h4>Conf Bs As</h4>
             </div>
-            <div class="col-9">
-                <p class="fs-sm-4"><a href="#conf" class="seleccionado">La conferencia</a></p>
-                <p class="fs-sm-4"><a href="#oradores">Los oradores</a></p>
-                <p class="fs-sm-4"><a href="#lugar">El lugar y la fecha</a></p>
-                <p class="fs-sm-4"><a href="#form">Conviértete en orador</a></p>
-                <p class="fs-sm-4"> <a href="" class="tickets">Comprar tickets</a></p>
+            <div class="col-md-9 col-12 secciones">
+                <p class="fs-md-4"><a href="#conf" class="seleccionado">La conferencia</a></p>
+                <p class="fs-md-4"><a href="#oradores">Los oradores</a></p>
+                <p class="fs-md-4"><a href="#lugar">El lugar y la fecha</a></p>
+                <p class="fs-md-4"><a href="#form">Conviértete en orador</a></p>
+                <p class="fs-md-4"> <a href="" class="tickets">Comprar tickets</a></p>
             </div>
         </nav>
     </header>
     <main>
         <section id="conf">
             <div class="card text-bg-dark border-0 rounded-0">
-                <img src="img/ba1.jpg" class="card-img" alt="...">
+                <div class="imagen"></div>
                 <div class="card-img-overlay">
                     <div>
-                        <h5 class="card-title fs-3">Conf Bs As</h5>
+                        <h5 class="card-title fs-1">Conf Bs As</h5>
                         <p class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que estan creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
                         <span>
                             <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
@@ -45,30 +45,30 @@
                 <h3>ORADORES</h3>
             </div>
             <div class="cardOradores">
-                <div class="card " style="width: 18rem;">
+                <div class="card" >
                     <img src="img/steve.jpg" class="card-img-top" alt="Steve Jobs">
                     <div class="card-body">
                       <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
                       <button type="button" class="btn btn-info btn-sm">React</button>
-                      <h5 class="card-title">Steve Jobs</h5>
+                      <h5 class="card-title fs-2">Steve Jobs</h5>
                       <p class="card-text">Lorem ipsum dolor amet, consectetur adipisiciong elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis corporis facilis veniam magni ratione!</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="img/bill.jpg" class="card-img-top" alt="Bill Gates">
                     <div class="card-body">
                       <button type="button" class="btn btn-warning btn-sm">JavaScript</button>
                       <button type="button" class="btn btn-info btn-sm">React</button>
-                      <h5 class="card-title">Bill Gates</h5>
+                      <h5 class="card-title fs-2">Bill Gates</h5>
                       <p class="card-text">Lorem ipsum dolor amet, consectetur adipisiciong elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis corporis facilis veniam magni ratione!</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                     <img src="img/ada.jpeg" class="card-img-top" alt="Ada Lovelace">
                     <div class="card-body">
                       <button type="button" class="btn btn-secondary btn-sm">Negocios</button>
                       <button type="button" class="btn btn-danger btn-sm">Startups</button>
-                      <h5 class="card-title">Ada Lovelace</h5>
+                      <h5 class="card-title fs-2">Ada Lovelace</h5>
                       <p class="card-text">Lorem ipsum dolor amet, consectetur adipisiciong elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nobis corporis facilis veniam magni ratione!</p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                 </div>
                 <textarea class="form-control textArea" aria-label="With textarea" placeholder="Sobre qué quieres hablar?"></textarea>
                 <div class="form-text" id="basic-addon4">Recuerda incluir un título para tu charla</div>
-                <button class="btn btn-primary" type="button">Enviar</button>
+                <button class="btn btn-primary fs-4 fs-lg-2" type="button">Enviar</button>
             </div>
         </section>
     </main>

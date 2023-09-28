@@ -12,11 +12,18 @@
 html, body{
     height: 100%;
     color: white;
+    font-size:1rem;
 }
 /* nav */
+header{
+    width: 100%;
+}
 nav{
     background-color: var(--color1);
     padding: .5rem;
+}
+nav.row{
+    --bs-gutter-x: 0;
 }
 nav div{
     display: flex;
@@ -31,7 +38,7 @@ nav div img{
     width: 7rem;
 }
 nav div p {
-    margin: 0 .5rem;
+    margin: 0 .8rem;
 }
 nav div p a{
     text-decoration: none;
@@ -56,8 +63,10 @@ main section{
 
 }
 /* conferencia */
-.card-img{
-    height: 35rem;
+.imagen{
+    height:35rem ;
+    background-image: url(../img/ba1.jpg);
+    background-size: cover;
 }
 .card-img-overlay{
     background-color: #0000007c;
@@ -78,6 +87,7 @@ main section{
     color: black;
     text-align: center;
     padding: .5rem;
+    margin: 1rem 0 1.5rem 0;
 }
 .title h6{
     font-size: smaller;
@@ -90,6 +100,7 @@ main section{
 }
 .cardOradores .card{
     margin: 0 1rem;
+    width: 18rem;
 }
 .card-body button{
     padding: .05rem .5rem ;
@@ -105,15 +116,16 @@ main section{
     width: 100%;
     display: flex;
 }
+#lugar div{
+    height: 30rem;
+}
 #lugar div:first-of-type{
     width: 40%;
-    height: 30rem;
     background-image: url(../img/honolulu.jpg);
     background-size: cover;
 }
 #lugar div:last-of-type{
     background-color: var(--color1);
-    height: 30rem;
     width: 40%;
     flex-grow: 1;
     padding: 1rem;
@@ -153,6 +165,7 @@ main section{
 
 /* footer */
 footer{
+    padding: 1rem 2rem;
     margin-top: 2rem;
     background: rgb(19,34,43);
     background: linear-gradient(83deg, rgba(19,34,43,1) 0%, rgba(24,54,77,1) 50%, rgba(32,97,107,1) 100%);
@@ -160,10 +173,138 @@ footer{
 footer div{
     height: 6rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
 }
 footer div h6{
     width: 6rem;
     text-align: center;
+    cursor: pointer;
+}
+@media screen and (max-width:460px){
+    nav{
+        padding: 0;
+    }
+    .card-img-overlay div{
+        padding: 0;
+    }
+    nav div p{
+        margin: .3rem;
+    }
+    nav div{
+        flex-wrap: wrap;
+    }
+    nav div:last-of-type{
+        justify-content:center;
+        padding-right: 0;
+    }
+    .cardOradores .card .card-body{
+        padding: .4rem;
+        font-size: small;
+    }
+    #lugar div:last-of-type{
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width:760px){
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav div:last-of-type{
+        padding-right: 0;
+    }
+    .card-img-overlay div{
+        width: 90%;
+    }
+    footer div h6{
+        font-size: .7rem;
+    }
+    .cardOradores .card{
+        margin: .1rem;
+    }
+    footer div{
+        flex-wrap: wrap;
+        align-items: baseline;
+    }
+    .formulario{
+        width: 80%;
+    }
+}
+@media screen and (min-width:1400px) {
+    body{
+        font-size: 1.5rem;
+    }
+    nav div p {
+        margin: 1rem;
+    } 
+    .imagen{
+        height: 50rem;
+    }
+    .card-img-overlay div{
+        width: 40%;
+    }
+    #oradores .cardOradores .card{
+        width: 25rem;
+        margin: 0 1.5rem;
+    }
+    #oradores .cardOradores{
+        padding-bottom: 4rem;
+    }
+    #lugar div{
+        height: 40rem;
+    }
+    #lugar div:first-of-type{
+        width: 45%;
+    }
+    .formulario{
+        height: 25rem;
+    }
+    footer div h6{
+        font-size: 1.3rem;
+    }
+    .form-control{
+        font-size: 1.5rem;
+    }
+    .formulario button{
+        height: 3rem;
+    }
+}
+@media screen and (min-width:1600px) {
+    body{
+        font-size: 2rem;
+    }
+    nav div img{
+        width: 12rem;
+    }
+    header h4{
+        font-size: 2rem;
+    }
+    nav div p {
+        margin: 2rem;
+    } 
+    #oradores .cardOradores .card{
+        width: 30rem;
+    }
+    #lugar div{
+        height: 45rem;
+    }
+    footer div h6{
+        font-size: 1.3rem;
+    }
+    .card-body button{
+        padding: .2rem .5rem ;
+        font-size:1.5rem ;
+    }
+    #conf span button, #lugar div button{
+        padding: .2rem .5rem ;
+        font-size:1.8rem ;
+    }
+    footer div h6{
+        font-size: 1.5rem;
+        width: 10rem;
+    }
+    .form-control{
+        font-size: 2rem;
+    }
 }
