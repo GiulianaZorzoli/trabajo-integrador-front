@@ -181,6 +181,113 @@ footer div h6{
     text-align: center;
     cursor: pointer;
 }
+
+
+/*TICKETS*/
+
+.ticketsMain{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 83%;
+    margin: 0;
+    padding: 0;
+}
+.categorias{
+    margin-top: 3rem;
+    display: flex;
+    align-items:center;
+}
+.categorias div{
+    margin: 0.5rem;
+    border: solid 4px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.categorias div:first-of-type{
+    border-color:rgb(60, 144, 212) ;
+}
+.categorias div:nth-of-type(2){
+    border-color:rgb(20, 168, 168) ;
+}
+.categorias div:last-of-type{
+    border-color:rgb(227, 202, 40)
+}
+.categorias div h2{
+    font-size: 40px;
+}
+#formTickets{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:start;
+    margin: 0;
+    padding: 0;
+}
+#formTickets .title h1{
+    font-size: 60px;
+    
+}
+#formTickets .title{
+    height: 15%;
+    padding: 0;
+    margin: 0;
+    
+}
+#formularioTickets{
+    width: 80%;
+}
+.categoria label{
+    margin-bottom: .5rem;
+}
+.categoria{
+    margin-left: 1rem;
+}
+#categoria optgroup{
+    font-size: 20px;
+}
+#categoria{
+    font-size: 25px;
+    color: #6b6f70;
+}
+
+#nombre, #apellido, #correo, #cantidad, #categoria{
+    height: 70px;
+    margin: 1rem 0;
+}
+
+#total{
+    height: 75px;
+    background: rgb(197, 218, 247);
+    border-radius: 5px;
+    border: 2px solid rgb(130, 167, 216);
+    color:rgb(97, 130, 172);
+    display: flex;
+    align-items: center;
+}
+#borrar, #resumen{
+    height: 70px;
+    width: 55%;
+}
+.botones{
+    display: flex;
+    padding: 0;
+}
+#borrar{
+    margin-right: 1rem;
+}
+
+
+
+
 @media screen and (max-width:460px){
     nav{
         padding: 0;
@@ -207,6 +314,12 @@ footer div h6{
     }
 }
 @media screen and (max-width:760px){
+    .cardOradores{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     nav{
         display: flex;
         flex-direction: column;
