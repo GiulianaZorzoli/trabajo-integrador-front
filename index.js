@@ -1,9 +1,9 @@
 const categoria = document.getElementById("categoria");
 const cantidad = document.getElementById("cantidad");
-const doc = document.getElementById("ticketsBody");
-const total = document.getElementById("totalTexto")
+const resumen = document.getElementById("resumen");
+const total = document.getElementById("totalTexto");
 
-doc.addEventListener("click",()=>{
+resumen.addEventListener("click",()=>{
     if(parseInt(cantidad.value)){
         if(categoria.value!="Seleccione una Categoría"){
             let totalInt=200*cantidad.value;
